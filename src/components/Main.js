@@ -1,6 +1,8 @@
 require('normalize.css/normalize.css');
 require('styles/sidebar.css');
 require('styles/App.css');
+//require('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css');
+//require('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css');
 
 import React from 'react';
 import Navbar from '../containers/navbar';
