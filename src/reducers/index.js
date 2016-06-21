@@ -11,8 +11,9 @@ import date from './date';
 import todos from './todos';
 import visibilityFilter from './visibilityFilter';
 import { syncHistoryWithStore, routerReducer } from 'react-router-redux';
+import navigation from './navigation';
 /* Populated by react-webpack-redux:reducer */
-const reducers = { date, todos, visibilityFilter };
+const reducers = { date, todos, visibilityFilter, navigation };
 module.exports = combineReducers({
 	...reducers,
     routing: routerReducer
