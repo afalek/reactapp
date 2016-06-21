@@ -1,3 +1,5 @@
+require ('../styles/todoList.css');
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { connect } from 'react-redux';
@@ -20,32 +22,40 @@ let TodoBanner = React.createClass({
 
 let TodoList = React.createClass({
   render: function() {
-      let createItem = function(itemText) {
-        return (
-            <TodoListItem>{itemText}</TodoListItem>
-        );
+    let createItem = function(itemText) {
+      return (
+        <TodoListItem>{itemText}</TodoListItem>
+      );
     };
     return <ul>{this.props.items.map(createItem)}</ul>;
   }
 });
-
+///////////   DONE TASK
 let TodoListItem = React.createClass({
+  handleDone: function(e) {
+    this.setState({
+      done: function() {
+        console.log('change change');
+      }
+    });
+    //console.log('change change');
+  },
   render: function(){
     return (
-      <li>{this.props.children}</li>
+      <li onClick={this.handleDone}>ss{this.props.children}</li>
     );
   }
 });
 
 let TodoForm = React.createClass({
     getInitialState: function() {
-        return {item: ''};
+      return {item: ''};
     },
     handleSubmit: function(e){
-        e.preventDefault();
-        this.props.onFormSubmit(this.state.item);
-        this.setState({item: ''});
-        return;
+      e.preventDefault();
+      this.props.onFormSubmit(this.state.item);
+      this.setState({item: ''});
+      return;
     },
     onChange: function(e){
         this.setState({
@@ -53,12 +63,12 @@ let TodoForm = React.createClass({
       });
     },
     render: function(){
-        return (
-          <form onSubmit={this.handleSubmit}>
-            <input type='text' ref='item' onChange={this.onChange} value={this.state.item} />
-            <input type='submit' value='Add' />
-          </form>
-        );
+      return (
+        <form onSubmit={this.handleSubmit}>
+          <input type='text' ref='item' onChange={this.onChange} value={this.state.item} placeholder="Add todo" />
+          <button type='submit'>Add</button>
+        </form>
+      );
     }
 });
 
@@ -74,7 +84,7 @@ let TodoApp = React.createClass({
   },
   render: function() {
     return (
-        <div>
+        <div className="content">
             <TodoBanner/>
             <TodoList items={this.state.items} />
             <TodoForm onFormSubmit={this.updateItems} />

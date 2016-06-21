@@ -1,4 +1,5 @@
 require('normalize.css/normalize.css');
+require('styles/sidebar.css');
 require('styles/App.css');
 
 import React from 'react';
@@ -10,17 +11,17 @@ class AppComponent extends React.Component {
   render() {
     return (
       <div className="index">
-        <Navbar  />
-
-   		<h2>Sidebar: </h2>
-        <ul>
-        	<li><Link to="/">Home</Link></li>
-        	<li><Link to="/page1">Update daty</Link></li>
-        	<li><Link to="/page2">Zmiana koloru</Link></li>
-        	<li><Link to="/todolist">Lista Todo</Link></li>
-        </ul>
-        <div>
-        	{this.props.children}
+        <Navbar date={this.props.date} />
+        <div className="wrapper">
+          <ul className="sidebar">
+          	<li><Link to="/">Home</Link></li>
+          	<li><Link to="/page1">Update daty</Link></li>
+          	<li><Link to="/page2">Zmiana koloru</Link></li>
+          	<li><Link to="/todolist">Lista Todo</Link></li>
+          </ul>
+          <div>
+          	{this.props.children}
+          </div>
         </div>
       </div>
     );

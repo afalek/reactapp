@@ -7,7 +7,7 @@ class Currentdate extends React.Component {
     render() {
         return (
             <div className="wrap">
-                <div>Date: {this.props.date}</div>
+                <div>{this.props.date}</div>
             </div>
         );
     }

@@ -1,3 +1,5 @@
+require('../styles/Date.css');
+
 import React from 'react';
 import RefreshDate from '../components/refresh-date';
 import Currentdate from '../components/currentdate';

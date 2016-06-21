@@ -11,7 +11,7 @@ class Refresh extends React.Component {
     }
     render() {
         return (
-            <div>
+            <div className="content">
                 <button onClick={this._handleClick}>Refresh date</button>
             </div>
         );

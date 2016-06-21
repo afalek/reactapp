@@ -1,0 +1,33 @@
+.sidebar {
+    width: 30%;
+    display: block;
+    float: left;
+    box-sizing: border-box;
+    margin-top: 0;
+}
+
+.sidebar li {
+    display: block;
+}
+
+.sidebar li:first-child a {
+    border-top: 1px solid #428bca;
+}
+
+.sidebar li a {
+    display: block;
+    color: #337ab7;
+    text-decoration: none;
+    padding: 10px 15px;
+    border: 1px solid #428bca;
+    border-top: none;
+}
+
+.sidebar li a:hover {
+    color: #23527c;
+    background-color: #428bca;
+}
+
+.wrapper {
+    margin-top: 45px;
+}
