@@ -1,4 +1,5 @@
 import React from 'react';
+import TodoListItem from './TodoListItem';
 
 class TodoList extends React.Component {
     render() {
@@ -7,7 +8,7 @@ class TodoList extends React.Component {
         <TodoListItem>{itemText}</TodoListItem>
       );
     };
-    return <ul>{this.props.items.map(createItem)}</ul>;
+    return <ul className="todoList">{this.props.items.map(createItem)}</ul>;
   }
 }
 

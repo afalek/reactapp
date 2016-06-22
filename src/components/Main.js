@@ -10,7 +10,7 @@ import { Link } from 'react-router';
 class AppComponent extends React.Component {
   render() {
     return (
-      <div className="index" style={this.props.color}>
+      <div className="index">
         <div className="container">
           <div className="row">
             <div className="col-sm-12">
@@ -24,7 +24,7 @@ class AppComponent extends React.Component {
               	<li><Link to="/todolist">Lista Todo</Link></li>
               </ul>
             </div>
-            <div className="col-sm-9 text-center voffset">
+            <div className="col-sm-9 text-center voffset text-center">
               <div>
               	{this.props.children}
               </div>
