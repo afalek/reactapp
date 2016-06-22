@@ -19,8 +19,7 @@ class TodoListItem extends React.Component {
 
   render(){
     return (
-      <li onClick = {this.updateState} style={this.state.line}>{this.props.children}
-      </li>
+      <li onClick = {this.updateState} style={this.state.line}>{this.props.children}</li>
     );
   }
 }
