@@ -1,0 +1,10 @@
+var express = require('express');
+var app = express();
+
+app.get('/test', function(req, res) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "X-Requested-With");
+    res.send({test: 1231});
+});
+
+app.listen(8080);

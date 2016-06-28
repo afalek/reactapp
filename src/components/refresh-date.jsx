@@ -16,6 +16,6 @@ class Refresh extends React.Component {
             </div>
         );
     }
-};
+}
 
 export default Refresh;

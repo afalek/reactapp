@@ -4,8 +4,7 @@ require('styles/App.css');
 
 import React from 'react';
 import Navbar from '../containers/navbar';
-import Todo from './todo';
-import { Link } from 'react-router';
+import Sidebar from './sidebar';
 
 class AppComponent extends React.Component {
   render() {
@@ -14,17 +13,16 @@ class AppComponent extends React.Component {
         <div className="container">
           <div className="row">
             <div className="col-sm-12">
-              <Navbar date={this.props.date} />
+              <div className="navbar navbar-default">
+                <Navbar date={this.props.date} />
+              </div>
             </div>
             <div className="col-sm-3 voffset">
-              <ul className="sidebar">
-              	<li><Link to="/">Home</Link></li>
-              	<li><Link to="/page1">Update daty</Link></li>
-              	<li><Link to="/page2">Zmiana koloru</Link></li>
-              	<li><Link to="/todolist">Lista Todo</Link></li>
-              </ul>
+              <div className="panel">
+                <Sidebar />
+              </div>
             </div>
-            <div className="col-sm-9 text-center voffset text-center">
+            <div className="col-sm-9 text-center voffset">
               <div>
               	{this.props.children}
               </div>

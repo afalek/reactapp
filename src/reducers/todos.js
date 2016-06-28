@@ -30,7 +30,7 @@ const todos = (state = [], action) => {
 			return state.map(t =>
 				todo(t, action)
 			)
-		default: 
+		default:
 			return state
 	}
 }

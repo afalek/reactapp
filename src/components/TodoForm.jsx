@@ -1,46 +1,25 @@
 import React from 'react';
 
-// class TodoForm extends React.Component {
-//   getInitialState() {
-//     return {item: ''};
-//   },
-//   handleSubmit(e){
-//     e.preventDefault();
-//     this.props.onFormSubmit(this.state.item);
-//     this.setState({item: ''});
-//     return;
-//   },
-//   onChange(e){
-//     this.setState({
-//       item: e.target.value
-//     });
-//   },
-//   render(){
-//     return (
-//       <form onSubmit={this.handleSubmit}>
-//         <input type='text' ref='item' onChange={this.onChange} value={this.state.item} placeholder="Add todo" />
-//         <button type='submit'>Add</button>
-//       </form>
-//     );
-//   }
-// }
+class TodoForm extends React.Component {
+  constructor(props) {
+    super(props);
 
-let TodoForm = React.createClass({
-  getInitialState: function() {
-    return {item: ''};
-  },
-  handleSubmit: function(e){
+    this.state = {
+      item: ''
+    };
+  }
+  handleSubmit(e){
     e.preventDefault();
     this.props.onFormSubmit(this.state.item);
     this.setState({item: ''});
     return;
-  },
-  onChange: function(e){
+  }
+  onChange(e){
     this.setState({
       item: e.target.value
     });
-  },
-  render: function(){
+  }
+  render(){
     return (
       <form onSubmit={this.handleSubmit}>
         <input type='text' ref='item' onChange={this.onChange} value={this.state.item} placeholder="Add todo" />
@@ -48,9 +27,6 @@ let TodoForm = React.createClass({
       </form>
     );
   }
-});
-
-
-
+}
 
 export default TodoForm;

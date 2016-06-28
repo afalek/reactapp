@@ -3,7 +3,6 @@ require('../styles/Date.css');
 import React from 'react';
 import RefreshDate from '../components/refresh-date';
 import Currentdate from '../components/currentdate';
-import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 
 class Page1 extends React.Component {
@@ -15,6 +14,6 @@ class Page1 extends React.Component {
 			</div>
 		);
 	}
-};
+}
 
 export default connect()(Page1);

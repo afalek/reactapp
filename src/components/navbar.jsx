@@ -1,11 +1,7 @@
 import React from 'react';
-import RefreshDate from '../components/refresh-date';
-import { bindActionCreators } from 'redux';
-import { connect } from 'react-redux';
 
 class Navbar extends React.Component {
 	render() {
-
 		return (
 			<div className="wrap">
 				<h1>Navbar: {this.props.title}</h1>
@@ -13,6 +9,6 @@ class Navbar extends React.Component {
 			</div>
 		);
 	}
-};
+}
 
 export default Navbar;

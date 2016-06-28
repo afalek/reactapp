@@ -1,15 +1,13 @@
 require('../styles/changeColor.css');
 
 import React from 'react';
-import ReactDOM from 'react-dom';
-import {changeBgColor} from '../actions/bgcolor';
 
 class Page2 extends React.Component {
 	constructor() {
 		super();
 		this.getDomNodeHandler = this.findDomNodeHandler.bind(this);
 		//this.handleColor = this.handleColor.bind(this);
-	};
+	}
 
 	findDomNodeHandler() {
 		let bgColor = document.querySelector('.bgcolor').value;
@@ -28,6 +26,6 @@ class Page2 extends React.Component {
 			</div>
 		);
 	}
-};
+}
 
 export default Page2;

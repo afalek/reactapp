@@ -10,7 +10,7 @@ import { combineReducers } from 'redux';
 import date from './date';
 import todos from './todos';
 import visibilityFilter from './visibilityFilter';
-import { syncHistoryWithStore, routerReducer } from 'react-router-redux';
+import { routerReducer } from 'react-router-redux';
 import navigation from './navigation';
 import bgcolor from './bgcolor';
 /* Populated by react-webpack-redux:reducer */

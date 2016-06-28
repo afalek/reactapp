@@ -1,12 +1,12 @@
 require ('../styles/todoList.css');
 
 import React from 'react';
-import ReactDOM from 'react-dom';
+//import ReactDOM from 'react-dom';
 import { connect } from 'react-redux';
-import TodoBanner from '../components/TodoBanner';
-import TodoList from '../components/TodoList';
-import TodoListItem from '../components/TodoListItem';
-import TodoForm from '../components/TodoForm';
+//import TodoBanner from '../components/TodoBanner';
+//import TodoList from '../components/TodoList';
+//import TodoListItem from '../components/TodoListItem';
+//import TodoForm from '../components/TodoForm';
 import TodoApp from '../components/TodoApp';
 
 class Todolist extends React.Component {
@@ -15,6 +15,6 @@ class Todolist extends React.Component {
         <TodoApp/>
       );
     }
-};
+}
 
 export default connect()(Todolist);

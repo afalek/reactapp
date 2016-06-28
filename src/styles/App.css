@@ -10,6 +10,10 @@ ul {
   padding: 0;
 }
 
+.content h3 {
+  margin-top: 0;
+}
+
 .index img {
   margin: 40px auto;
   border-radius: 4px;

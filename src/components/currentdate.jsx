@@ -1,7 +1,4 @@
 import React from 'react';
-import RefreshDate from '../components/refresh-date';
-import { bindActionCreators } from 'redux';
-import { connect } from 'react-redux';
 
 class Currentdate extends React.Component {
     render() {
@@ -11,6 +8,6 @@ class Currentdate extends React.Component {
             </div>
         );
     }
-};
+}
 
 export default Currentdate;
