@@ -1,0 +1,24 @@
+.sidebar li {
+    display: block;
+}
+
+.sidebar li a {
+    display: block;
+    color: #337ab7;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.sidebar li a:hover {
+    color: #23527c;
+    background-color: #ccc;
+    border-left: 3px solid #5b9bd1;
+}
+
+.voffset {
+    margin-top: 45px;
+}
+
+.panel {
+    padding: 10px 0;
+}

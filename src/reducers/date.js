@@ -4,7 +4,7 @@ let date = (state=defaultState, action) => {
 		case 'DATE_UPDATE':
 			return action.date;
 		default:
-			return state;	
+			return state;
 	}
 }
 
